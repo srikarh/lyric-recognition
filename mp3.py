@@ -6,17 +6,17 @@ from pydub import AudioSegment
 
 
 
-
+"""
 src = "Lil Nas X - Panini.mp3"
 dst = "audio_file.wav"
 
                                                             
 sound = AudioSegment.from_mp3(src)
 sound.export(dst, format="wav")
+"""
 
-AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), dst)
-# AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "french.aiff")
-# AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "chinese.flac")
+AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "foreground.wav")
+
 
 # use the audio file as the audio source
 r = sr.Recognizer()
@@ -25,7 +25,7 @@ with sr.AudioFile(AUDIO_FILE) as source:
     
 # recognize speech using Sphinx
 try:
-    print("Sphinx thinks you said " + r.recognize_sphinx(audio))
+    print(r.recognize_sphinx(audio))
 except sr.UnknownValueError:
     print("Sphinx could not understand audio")
 except sr.RequestError as e:
