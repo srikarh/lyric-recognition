@@ -6,14 +6,13 @@ from pydub import AudioSegment
 
 
 
-"""
-src = "Lil Nas X - Panini.mp3"
+src = "src.mp3"
 dst = "audio_file.wav"
 
                                                             
 sound = AudioSegment.from_mp3(src)
 sound.export(dst, format="wav")
-"""
+
 
 AUDIO_FILE = path.join(path.dirname(path.realpath(__file__)), "foreground.wav")
 
@@ -32,7 +31,7 @@ except sr.RequestError as e:
     print("Sphinx error; {0}".format(e))
 
 
-"""
+
 # Create MP3File instance.
 mp3 = MP3File(src)
 
@@ -51,5 +50,3 @@ songs = api.search(songstr[0: len(songstr) - 1], category = 'songs')
 song_url = songs[0]['url']
 
 Lyrics = api.getLyrics(url = song_url)
-
-"""
