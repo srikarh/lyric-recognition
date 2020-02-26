@@ -30,6 +30,6 @@ $ pip install pocketsphinx
 
 ## Acknowledgements
 This is based on the "REPET-SIM" method of Rafii and Pardo, 2012
-REPET algorithm by Brian McFee
+and REPET algorithm by Brian McFee
 
 © Copyright 2013--2019, librosa development team
