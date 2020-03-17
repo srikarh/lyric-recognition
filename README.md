@@ -21,6 +21,11 @@ $ pip install pocketsphinx
 ```
 
 > Now install ffmpeg from here: https://www.ffmpeg.org/download.html
+> cd into the folder and run:
+
+```shell
+$ python vocal_seperation.py
+```
 
 ---
 ### Usage
