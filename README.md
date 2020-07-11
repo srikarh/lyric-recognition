@@ -2,7 +2,7 @@
  Attempt at keyword recognition and transcription of audio using PocketSphinx and REPET.
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
-[![Badges](http://img.shields.io/:badges-9/9-ff6799.svg?style=flat-square)](https://github.com/badges/badgerbadgerbadger)
+
 
 ### Setup
 
