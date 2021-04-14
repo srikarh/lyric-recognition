@@ -34,7 +34,7 @@ from mutagen.mp3 import MP3
 
 #############################################
 # Load an example with vocals.
-src = 'panini.mp3'
+src = 'src.mp3'
 
 audio = MP3(src)
 
