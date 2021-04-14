@@ -112,7 +112,7 @@ S_background = mask_i * S_full
 # Plot the same slice, but separated into its foreground and background
 
 # sphinx_gallery_thumbnail_number = 2
-"""
+
 plt.figure(figsize=(12, 8))
 plt.subplot(3, 1, 1)
 librosa.display.specshow(librosa.amplitude_to_db(S_full[:, idx], ref=np.max),
@@ -132,7 +132,7 @@ plt.title('Foreground')
 plt.colorbar()
 plt.tight_layout()
 plt.show()
-"""
+
 
 
 sf.write("foreground.wav", librosa.istft(S_foreground * phase), sr, "PCM_24")
